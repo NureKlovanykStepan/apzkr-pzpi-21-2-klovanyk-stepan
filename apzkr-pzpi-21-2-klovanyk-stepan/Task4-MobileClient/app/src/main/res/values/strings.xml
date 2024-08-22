@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FeelTheBook</string>
+    <!--    <string name="api_url">http://media-licking.gl.at.ply.gg:53314/api/v2/</string>-->
+    <string name="api_url">http://192.168.0.106:8888/api/v2/</string>
+    <string name="iot_scheme">http://</string>
+</resources>
