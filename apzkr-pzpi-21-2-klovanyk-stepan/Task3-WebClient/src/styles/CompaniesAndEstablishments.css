@@ -1,0 +1,84 @@
+/* General Styles */
+.cne {
+  font-family: sans-serif;
+}
+
+.cne.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cne.table th, .cne.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.cne.table th {
+  background-color: #f2f2f2;
+}
+
+.cne input[type="text"], .cne input[type="checkbox"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.cne button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;  /* Spacing between buttons */
+}
+
+.cne .save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.cne .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Company Row Styling */
+.cne.company-row {
+  border-bottom: 2px solid #ddd; /* Stronger separation between companies */
+}
+
+/* Nested Table Styling */
+.cne.establishment-table {
+  margin-top: 10px; /* Space above nested table */
+  width: 100%;
+}
+
+.cne.establishment-row td {
+  padding: 8px; /* Less padding for nested table cells */
+}
+
+/* Input Field Width Adjustment */
+.cne.table-cell input[type="text"] {
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+.cne .establishment-country-select {
+  width: 100%; /* Make dropdown full width */
+}
+
+
+/* Create Row Styling */
+.cne.create-company-row, .cne.create-establishment-row {
+  background-color: #f9f9f9; /* Lighter background for create rows */
+}
+
+.cne.create-establishment-row {
+  border-top: 1px dashed #ddd; /* Visual cue for new establishment */
+}
+
+/* Action Button Styling */
+.cne .actions-container {
+  display: flex;
+  gap: 10px;
+}
+

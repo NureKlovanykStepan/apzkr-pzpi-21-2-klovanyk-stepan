@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: sans-serif; /* Choose a modern, clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    color: #333; /* Darker text for readability */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.literatures.container {
+    margin: 20px auto;
+    max-width: 1200px;
+
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid for literature items */
+    gap: 24px; /* Increased gap for better visual separation */
+}
+
+/* Literatures List */
+.literatures-list .item-container {
+    border: 1px solid #ddd; /* Softer border color */
+    padding: 20px; /* More padding for better content presentation */
+    border-radius: 8px; /* Slightly larger border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+    background-color: #fff; /* White background for the items */
+    transition: transform 0.2s ease; /* Add a smooth transition on hover */
+}
+
+.literatures-list .item-container:hover {
+    transform: translateY(-3px); /* Slightly elevate the item on hover */
+}
+
+.literatures-list .info-container p {
+    font-size: 1.2em; /* Larger font size for the literature title */
+    font-weight: 500; /* Slightly bolder title */
+}
+
+.literatures-list .image-container {
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.literatures-list .actions-container button {
+    padding: 8px 16px; /* Better button padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary color for action buttons */
+    color: white;
+    cursor: pointer;
+    margin: 0 5px; /* Add some margin between buttons */
+}
+
+.literatures-list .action.edit {
+    background-color: #28a745; /* Green color for the edit button */
+}
+
+/* Literature Editor */
+.literature-editor.container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.literature-editor .details-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust column proportions as needed */
+    margin: 20px;
+}
+
+
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .pdf-preview {
+        aspect-ratio: 9/16;
+        width: 100%;
+        overflow-y: auto;
+    }
+}
+
+.thumbnail-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .thumbnail-preview {
+        margin: 0 auto;
+        display: flex;
+        img {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+.literature-editor .attributes-container {
+    width: 70%;
+}
+
+.literature-editor label, .literature-editor p {
+    margin-bottom: 10px;
+}
+
+.literature-editor input[type="text"],
+.literature-editor input[type="number"],
+.literature-editor textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.literature-editor .actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.literature-editor button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.page-configs-editor.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White background for the editor */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle box shadow */
+    overflow: auto;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+}
+
+.page-configs-editor th, .page-configs-editor td {
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+}
+
+.page-configs-editor th {
+    padding: 15px;
+    background-color: #f5f5f5; /* Light gray background for headers */
+}
+
+/* Page Config Row */
+.page-config.container {
+    display: flex; /* Use flexbox for easier alignment */
+    align-items: center; /* Vertically center items in the container */
+    gap: 10px; /* Add spacing between elements */
+}
+
+.page-config.select-container {
+    flex-grow: 1; /* Allow select elements to take available space */
+}
+
+/* Page Config Actions */
+.page-config.actions button {
+    padding: 8px 16px; /* Button padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Margin between buttons */
+}
+
+.page-config .create-button {
+    background-color: #28a745; /* Green for create */
+    color: white;
+}
+
+.page-config .update-button {
+    background-color: #007bff; /* Blue for update */
+    color: white;
+}
+
+.page-config .delete-button {
+    background-color: #dc3545; /* Red for delete */
+    color: white;
+}
+
+/* Config Specification Guidelines */
+.config-spec-guideline.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.config-spec-guideline label {
+    margin-bottom: 5px;
+}
+
+.config-spec-guideline input[type="color"],
+.config-spec-guideline input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

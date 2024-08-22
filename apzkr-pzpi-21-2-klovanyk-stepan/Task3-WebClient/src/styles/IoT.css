@@ -1,0 +1,99 @@
+/* General Styles for the IoT Main Container */
+.iot.main-container {
+  font-family: sans-serif; /* Consistent font */
+}
+
+.iot h3 {
+  margin-top: 25px; /* Consistent section header spacing */
+  border-bottom: 1px solid #ddd; /* Subtle divider under headers */
+  padding-bottom: 5px;
+}
+
+/* Section Styles */
+.iot.gate-pre-management,
+.iot.gate-management,
+.iot.registered-devices-management {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+/* Table Styling */
+.iot table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.iot th, .iot td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.iot th {
+  background-color: #f2f2f2;
+}
+
+/* Form Elements */
+.iot select,
+.iot textarea,
+.iot input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.iot textarea.device-details {
+  height: 60px; /* Adjust as needed */
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Buttons */
+.iot button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.iot .open-gate,
+.iot .save-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.iot .close-gate,
+.iot .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.iot .change-room {
+  background-color: #2196F3;
+  color: white;
+}
+
+.iot .download-button {
+  background-color: #673AB7;
+  color: white;
+}
+
+
+/* Configuration State Styling */
+.iot .device-row.CONFIGURED {
+  background-color: #f0fff0; /* Light green background */
+}
+
+.iot .device-row.NON-CONFIGURED {
+  background-color: #fff5f5; /* Light red background */
+}
+
+.iot .device-row td:first-child {
+  font-weight: bold;
+}
+
+/* Select Placeholder Styling */
+.iot .iot select option[value=""]::before {
+  content: attr(placeholder);
+  color: #ccc; /* Light gray for placeholder text */
+}

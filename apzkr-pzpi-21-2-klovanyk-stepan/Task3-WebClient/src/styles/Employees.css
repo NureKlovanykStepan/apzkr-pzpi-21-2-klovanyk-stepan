@@ -1,0 +1,73 @@
+.employees { /* Main container */
+    font-family: sans-serif;
+}
+
+/* Establishment Selector Container */
+.employees-establishment-selector-container {
+    margin-bottom: 20px;
+}
+
+.employees table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employees th, .employees td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.employees th {
+    background-color: #f2f2f2;
+}
+
+.employees input[type="checkbox"] {
+    margin-right: 5px; /* Adjust spacing for checkbox */
+}
+
+.employees input[type="email"], .employees input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.employees .role {
+    margin-bottom: 5px; /* Add vertical spacing between roles */
+}
+
+.employees .actions-container {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 10px; /* Add space between buttons */
+    margin-top: 10px; /* Add space between roles and buttons */
+}
+
+.employees button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.employees .save-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.employees .delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.employees .email {
+    width: 30%; /* Adjust width as needed */
+}
+
+.employees .roles {
+    width: 70%; /* Adjust width as needed */
+}
+
+/* New Employee Row Styling (add class to the row in HTML) */
+.employees-new-employee-row .employees-email input {
+    width: 100%; /* Make email input wider */
+}

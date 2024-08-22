@@ -1,0 +1,96 @@
+.header {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-elements-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.role-page-button {
+  background-color: #007bff;
+  color: white; /* Ensure white text for contrast */
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners for a softer look */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.role-page-button:hover {
+  background-color: #0069d9; /* Darker blue on hover */
+}
+
+.header-employee-infoblock {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+/* Spacing for elements within the info block */
+.header-employee-infoblock > * {
+  margin-right: 10px;
+}
+
+.header-employee-infoblock > *:last-child {
+  margin-right: 0;
+}
+
+.header-employee-email {
+  display: flex;
+  align-items: center;
+}
+
+.header-employee-icon {
+  margin-right: 5px;
+  color: #333; /* Darker icon color */
+}
+
+.header-employee-email,
+.header-employee-company-text {
+  font-weight: 500; /* Slightly bolder font */
+}
+
+.header-employee-company-text {
+  mar: 5px;
+}
+
+.header-employee-company-container {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.header-employee-logout-button {
+  background-color: #dc3545;
+  color: white;  /* Ensure white text for contrast */
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.header-employee-logout-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.header-logout-icon {
+  margin-left: 5px;
+}
